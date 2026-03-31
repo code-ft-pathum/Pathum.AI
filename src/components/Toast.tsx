@@ -1,6 +1,6 @@
 "use client";
 
-import { ToastMessage } from "@/app/page";
+import { ToastMessage } from "../app/page";
 import { useEffect, useState } from "react";
 
 interface Props {

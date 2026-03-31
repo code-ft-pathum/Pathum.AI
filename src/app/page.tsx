@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useRef, useCallback } from "react";
-import { useTheme } from "@/components/ThemeProvider";
-import Header from "@/components/Header";
-import ContextSelector from "@/components/ContextSelector";
-import LevelSelector from "@/components/LevelSelector";
-import TextEditor from "@/components/TextEditor";
-import ResultPanel from "@/components/ResultPanel";
-import Toast from "@/components/Toast";
-import BackgroundOrbs from "@/components/BackgroundOrbs";
+import { useTheme } from "../components/ThemeProvider";
+import Header from "../components/Header";
+import ContextSelector from "../components/ContextSelector";
+import LevelSelector from "../components/LevelSelector";
+import TextEditor from "../components/TextEditor";
+import ResultPanel from "../components/ResultPanel";
+import Toast from "../components/Toast";
+import BackgroundOrbs from "../components/BackgroundOrbs";
 
 export type ContextMode = "normal" | "academic" | "speech" | "creative" | "professional" | "casual" | "technical";
 
@@ -316,7 +316,7 @@ export default function HomePage() {
       {/* Toasts */}
       <div style={{ position: "fixed", bottom: 24, right: 24, zIndex: 1000, display: "flex", flexDirection: "column", gap: 10 }}>
         {toasts.map((toast) => (
-          <Toast key={toast.id} toast={toast} onClose={(id) => setToasts((p) => p.filter((t) => t.id !== id))} />
+          <Toast key={toast.id} toast={toast} onClose={(id: string) => setToasts((p) => p.filter((t) => t.id !== id))} />
         ))}
       </div>
     </div>

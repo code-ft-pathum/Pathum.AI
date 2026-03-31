@@ -1,6 +1,6 @@
 "use client";
 
-import { ContextMode } from "@/app/page";
+import { ContextMode } from "../app/page";
 
 interface ContextOption {
   id: ContextMode;

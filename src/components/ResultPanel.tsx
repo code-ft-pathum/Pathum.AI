@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { HumanizeResult, ToastMessage } from "@/app/page";
+import { HumanizeResult, ToastMessage } from "../app/page";
 
 interface Props {
   result: HumanizeResult;
